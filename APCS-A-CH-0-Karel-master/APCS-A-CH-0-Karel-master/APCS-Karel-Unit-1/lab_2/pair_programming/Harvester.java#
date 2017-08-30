@@ -7,7 +7,7 @@ import kareltherobot.*;
  * teacher :
  * due date:
  */
-public class Planter extends HarvesterSoltution
+public class Planter extends Harvester
 {
     //Constructor method that utilizes the constructor method of the super class (UrRobot)
     public Planter(int st, int av, Direction dir, int numBeepers) {

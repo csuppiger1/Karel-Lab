@@ -3,7 +3,7 @@ package lab_2.individual_lab;
 import kareltherobot.*;
 import java.awt.Color;
 
-public class Problem2 extends Robot
+public class Problem2 extends Problem1
 {
    
     /**
@@ -15,6 +15,13 @@ public class Problem2 extends Robot
     }
 
     public void setField(){
+        setPins();
+        repositionLeft();
+        thirdRow();
+        repositionRight();
+        secondRow();
+        repositionLeft();
+        firstRow();
         
     }
 }
