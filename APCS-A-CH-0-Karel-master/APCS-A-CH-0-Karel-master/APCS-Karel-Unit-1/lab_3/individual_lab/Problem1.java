@@ -1,4 +1,4 @@
-package lab_3.pair_programming;
+package lab_3.individual_lab;
 
 import kareltherobot.*;
 import java.awt.Color;
@@ -14,19 +14,24 @@ public class Problem1 extends Robot
         super(st, av, dir, beep);
     }
 
-    public void checkSurrounded(){
-        if(!frontIsClear()) {
+    public void faceEast() {
+        if(facingWest()) {
+            turnLeft();
             turnLeft();
         }
-        if(!frontIsClear()) {
-            turnLeft();
+        else
+        {
+            if(facingNorth()) {
+                turnRight();}
+            else {
+                turnLeft();
+            }
         }
-        if(!frontIsClear()) {
-            turnLeft();
-        }
-        if(!frontIsClear()) {
-            turnOff();
-        }
+    } public void turnRight() {
+        turnLeft();
+        turnLeft();
+        turnLeft();
     }
 }
+
 

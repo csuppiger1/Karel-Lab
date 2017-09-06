@@ -3,11 +3,11 @@ package lab_3.individual_lab;
 import kareltherobot.*;
 import java.awt.Color;
 
-public class Problem2Driver implements Directions
+public class Problem1Driver implements Directions
 {
     public static void main(String args[])  {
-        Problem2 karel = new Problem2(2, 1, East, -1);
-        karel.carpetRooms();
+        Problem1 karel = new Problem1(1, 1, South, -1);
+        karel.faceEast();
         karel.turnOff();
         
     } 
